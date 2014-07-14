@@ -1,0 +1,46 @@
+body,ul,li,div,p,h1,h2,h3,h4,h5,h6 {
+	margin: 0;
+	padding: 0;	
+}
+ul{list-style: none;}
+/*tabs style*/
+.ui-tabs{
+	width: 800px; 
+	margin: 30px auto;	
+}
+.ui-tabs ul{	
+	background-color: #f8f8f8;
+	border-color: #e7e7e7;
+	border-width: 0 0 1px;
+	min-height: 50px;
+	border-radius: 4px 4px 0 0;
+	border: 1px solid transparent;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;	
+}
+.ui-tabs li{
+	position: relative;
+	display:table-cell;
+	width: 1%;
+	padding: 10px 15px;	
+	border-bottom: 1px solid #ddd;
+	border-radius: 4px 4px 0 0;
+	color: #555;
+	cursor: default;
+	background-color: #fff;		
+	line-height: 1.42857143;	
+}
+.ui-tabs li.current{
+	border: 1px solid #ddd;
+	border-bottom-color: #fff;
+}
+.ui-tabs li:hover{background-color: #eee;}
+.ui-tabs div{ width: 100%; display: none; height: 200px; background: #f8f8f8;}
+.ui-tabs div.current{ display: block;}
+/*drag*/
+.drag{ position: absolute;}
+/*draglist style*/
+.ui-draglist{list-style:none; width:950px; margin:0 auto; position: relative;}
+.ui-draglist li{ width:200px; height:200px; float:left; margin:10px; display:inline;padding: 5px; background: #fff;}
+.ui-draglist .current{ border:1px dashed #aaa;}
+.ui-draglist li img{ width:100%; height:100%; }
