@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>ui-tabs</title>
+	<script src="../src/dquery.js"></script>
+	<script src="../src/css.js"></script>
+	<script src="../src/traversing.js"></script>
+	<script src="../src/ui.js"></script>
+	<!-- <link rel="stylesheet" href="../src/uistyle/bootstrap.css" />
+	<link rel="stylesheet" href="../src/uistyle/bootstrap-theme.css" />
+	<link rel="stylesheet" href="../src/uistyle/docs.min.css" /> -->
+	<link rel="stylesheet" href="../src/uistyle/ui.css" />
+</head>
+<body>
+	<div id="tabs" class="ui-tabs">
+		<ul>
+			<li class="abc">a</li>
+			<li>b</li>
+			<li>c</li>
+		</ul>
+		<div>测试文字一大片测试文字一大片测试文字一大片测试文字一大片</div>
+		<div class="test">测试文字一大片测试文字一大片测试文字一大片测试文字一大片测试文字一大片</div>
+		<div>测试文字一大片测试文字一大片测试文字一大片测试文字一大片</div>
+	</div>
+	<script>
+	$(function(){
+		$("#tabs").tabs("mouseover",2);
+	});	
+	</script>
+</body>
+</html>

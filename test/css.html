@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+	<script src="dquery.js"></script>
+	<script src="css.js"></script>
+	<style>
+		div{height:30px; width: 300px;background: #cc0; padding: 10px; margin: 20px; border:5px solid #eee;}
+		#box1{ display: inline;}
+		#box2{ display: none;}
+		#pic{ overflow: hidden; height: 300px;}
+	</style>
+	<script>
+		$(function(){
+			
+
+			$("div").css("border","3px solid #000");
+			$("div").css("border-radius","30px");
+			$("div").css("transform","skew(20deg,3deg)");
+			// $("div").click(function(){
+				// $("div").css("background-color","#f60");
+			// });
+			// $("div").css("float","right");
+		});
+	</script>
+</head>
+<body>
+	<input type="button" value="show" id="show" />
+	<input type="button" value="hide" id="hide" />
+	<input type="button" value="toggle" id="toggle" />
+<div id="box">测试文档</div>	
+<div id="box1">测试文档</div>	
+<div id="box2">测试文档</div>	
+	<div id="pic"><img src="pic.jpg" alt="" /></div>
+</body>
+</html>
