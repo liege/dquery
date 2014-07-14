@@ -241,4 +241,45 @@ function Center(elem){
 	elem.style.top = (pageHeight-h)/2 + "px";
 	document.title = pageWidth+"---"+pageHeight;
 }
-
+//下拉
+function Dropdown(){
+		var oList = document.getElementById("list");
+		var oTitle = oList.getElementsByTagName("div")[0];
+		var oI = oTitle.getElementsByTagName("i")[0];
+		var oUl = oList.getElementsByTagName("ul")[0];
+		var state = true;
+		var num = 0;
+		var timer =null;
+		oTitle.onclick = function(){
+			timer = window.setInterval(slide,5);
+			show(); 
+		};		
+		function show(){
+			if(state){    //列表显示
+				oI.className = "active";
+				oTitle.style.borderBottom = "1px solid #e1e1e1";
+			}else{    //列表隐藏
+				oI.className = "current";
+				oTitle.style.border = "none";
+			}
+			state = !state;
+		};
+		function slide(){
+			oUl.style.height = num + "px";
+			if(!state){
+				num += 4;
+				if(num >144){
+					clearInterval(timer); 
+					num = 144; 
+					return;
+				}
+				}else{
+			    num-=4;
+				if(num<0){ 
+					clearInterval(timer); 
+					num = 0; 
+					return;
+				}
+			}
+			}			
+		}
